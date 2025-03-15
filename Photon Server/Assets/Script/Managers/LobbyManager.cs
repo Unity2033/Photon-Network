@@ -6,21 +6,13 @@ using UnityEngine.UI;
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] Dropdown dropdown;
-    [SerializeField] Canvas lobbyCanvas;
-    private void Awake()
-    {  
-        if (PhotonNetwork.IsConnected)
-        {
-            lobbyCanvas.gameObject.SetActive(false);
-        }
-    }
 
     public void Connect()
     {
         // 서버에 접속하는 함수
         PhotonNetwork.ConnectUsingSettings();
 
-        lobbyCanvas.gameObject.SetActive(false);
+        PhotonNetwork.LoadLevel("Room Scene");
     }
 
     public override void OnConnectedToMaster()
