@@ -1,0 +1,448 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.24f1 (11fa355cd605) revision 1178165'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'ko' Physical Memory: 16317 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.24f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/nwond/OneDrive/바탕 화면/Photon-Server/Photon Server
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+60451
+-job-worker-count
+5
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/nwond/OneDrive/바탕 화면/Photon-Server/Photon Server
+C:/Users/nwond/OneDrive/바탕 화면/Photon-Server/Photon Server
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23512]  Target information:
+
+Player connection [23512]  * "[IP] 192.168.219.101 [Port] 0 [Flags] 2 [Guid] 872499884 [EditorId] 872499884 [Version] 1048832 [Id] WindowsEditor(7,Dinosaur) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23512] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23512] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 14.81 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.24f1 (11fa355cd605)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/nwond/OneDrive/바탕 화면/Photon-Server/Photon Server/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2544)
+    Vendor:   NVIDIA
+    VRAM:     8036 MB
+    Driver:   32.0.15.7283
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56180
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.004995 seconds.
+- Loaded All Assemblies, in  0.450 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 299 ms
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.664 seconds
+Domain Reload Profiling: 1111ms
+	BeginReloadAssembly (165ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (171ms)
+		LoadAssemblies (161ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (151ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (664ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (621ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (390ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (145ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.056 seconds
+Refreshing native plugins compatible for Editor in 9.13 ms, found 6 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+
+=================================================================
+	Native Crash Reporting
+=================================================================
+Got a UNKNOWN while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
+=================================================================
+	Managed Stacktrace:
+=================================================================
+	  at <unknown> <0xffffffff>
+	  at System.RuntimeType:get_Name <0x00082>
+	  at PlayFab.PfEditor.PlayFabEditorSDKTools:GetPlayFabSettings <0x00230>
+	  at PlayFab.PfEditor.PlayFabEditorSDKTools:get_IsInstalled <0x0001a>
+	  at Startup:.cctor <0x0004a>
+	  at System.Object:runtime_invoke_void <0x00084>
+	  at <unknown> <0xffffffff>
+	  at System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor <0x00069>
+	  at System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor <0x0003a>
+	  at UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes <0x0080a>
+	  at <Module>:runtime_invoke_void_object <0x00087>
+=================================================================
+Refreshing native plugins compatible for Editor in 10.06 ms, found 6 plugins.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.022 seconds
+Domain Reload Profiling: 2071ms
+	BeginReloadAssembly (425ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (529ms)
+		LoadAssemblies (403ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (248ms)
+			TypeCache.Refresh (183ms)
+				TypeCache.ScanAssembly (165ms)
+			BuildScriptInfoCaches (54ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1022ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (788ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (681ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 12.21 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3861 unused Assets / (1.2 MB). Loaded Objects now: 4429.
+Memory consumption went from 122.6 MB to 121.5 MB.
+Total: 9.708100 ms (FindLiveObjects: 0.982400 ms CreateObjectMapping: 0.323100 ms MarkObjects: 6.632400 ms  DeleteObjects: 1.767000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 723385.274578 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/box.fbx
+  artifactKey: Guid(5a00677ee961f3b418b29f400129bd05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/box.fbx using Guid(5a00677ee961f3b418b29f400129bd05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f50236b18dfc7ece35e5c9a68597a36') in 0.1645548 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/plant_014.fbx
+  artifactKey: Guid(54557db7366a5004f99804f2a8c81da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/plant_014.fbx using Guid(54557db7366a5004f99804f2a8c81da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4273cdb7ca400e7a7c4c6648ac29250d') in 0.0248677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/tank-body_002.fbx
+  artifactKey: Guid(27c580a761f97bf4b8f00b3444ef34b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/tank-body_002.fbx using Guid(27c580a761f97bf4b8f00b3444ef34b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31797040134f5b3a9646bbaaa7efa213') in 0.0245152 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/tree_002.fbx
+  artifactKey: Guid(00df2e571d826f8408df3252cde756bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/tree_002.fbx using Guid(00df2e571d826f8408df3252cde756bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14bad49ae610d2b46b1e87d22fd04d17') in 0.0234167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/tank-body.fbx
+  artifactKey: Guid(3f105ec69979f8a47a7112945ab6a7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/tank-body.fbx using Guid(3f105ec69979f8a47a7112945ab6a7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f10bd9633320b54d75bab3145196189') in 0.0235684 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/cliff_006.fbx
+  artifactKey: Guid(ce43515043de11e4f89bb146477572dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/cliff_006.fbx using Guid(ce43515043de11e4f89bb146477572dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38f68439349254701eb8cd6830ea7deb') in 0.0223988 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/tank-body_001.fbx
+  artifactKey: Guid(3f6ae7dbaeb1fad4c94c927d99f4ae8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/tank-body_001.fbx using Guid(3f6ae7dbaeb1fad4c94c927d99f4ae8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8ad769c934de9c25d471d13f6fd2cb5') in 0.0223289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/tree_003.fbx
+  artifactKey: Guid(a27b0c6a67be5e347932a4268bb2525a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/tree_003.fbx using Guid(a27b0c6a67be5e347932a4268bb2525a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33ae9a39f7e001130f309afe515606cc') in 0.0219542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/cliff_003.fbx
+  artifactKey: Guid(b41d739f6282e5c40b5c4948283c37dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/cliff_003.fbx using Guid(b41d739f6282e5c40b5c4948283c37dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27b578b06c510fd27864396f5b71b25b') in 0.0240051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/bridge_001.fbx
+  artifactKey: Guid(03850641f884e534894060ce0d00df61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/bridge_001.fbx using Guid(03850641f884e534894060ce0d00df61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba02c3ea475efa6a4be0b69c081d8468') in 0.0244448 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/tree.fbx
+  artifactKey: Guid(67e5f1a004433c54eb1fdf803a74a299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/tree.fbx using Guid(67e5f1a004433c54eb1fdf803a74a299) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e710edc9f7a40431a6c5830ac988c370') in 0.0232569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/cliff_002.fbx
+  artifactKey: Guid(c79feba0237ae3b43971367d335f0cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/cliff_002.fbx using Guid(c79feba0237ae3b43971367d335f0cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7530a7f89913ff6d66352555c1b0af44') in 0.0250337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/rock_004.fbx
+  artifactKey: Guid(5c2d56cf059bc714e86494f9b831a66b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/rock_004.fbx using Guid(5c2d56cf059bc714e86494f9b831a66b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e4d73c8e6c85d86e19311bb5cbd0e358') in 0.0227843 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/rock_003.fbx
+  artifactKey: Guid(9bfeac243c7a2e64cb52c537d9d2af15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/rock_003.fbx using Guid(9bfeac243c7a2e64cb52c537d9d2af15) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f432e28328b6fb3b6ef9fd43d62cf45') in 0.02129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/canon.fbx
+  artifactKey: Guid(92fd50546eb212c4b88f9ed8e827ce38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/canon.fbx using Guid(92fd50546eb212c4b88f9ed8e827ce38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7217de1f5453dcc9232329910f0e82d3') in 0.0216692 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/wall_004.fbx
+  artifactKey: Guid(4b33d2e26ce4d574080731e21707cad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/wall_004.fbx using Guid(4b33d2e26ce4d574080731e21707cad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6951891234d044810c70c75bd78a04f0') in 0.0221491 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/plant_005.fbx
+  artifactKey: Guid(e20ae4a6701091b48be4de39c463c916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/plant_005.fbx using Guid(e20ae4a6701091b48be4de39c463c916) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8578eefd40a0ebf9d30865445a024ef') in 0.0226221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/rock_002.fbx
+  artifactKey: Guid(51b9f77bb7858e04e8db9695d7e23c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/rock_002.fbx using Guid(51b9f77bb7858e04e8db9695d7e23c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9cb137493f62672a73a2c9a3169f8caa') in 0.0233571 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/cliff_005.fbx
+  artifactKey: Guid(b1bf9dfa5149f8644887db1341b23d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/cliff_005.fbx using Guid(b1bf9dfa5149f8644887db1341b23d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed57f0978f9fb9fd495f8684b3b672ba') in 0.0234594 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/rock_007.fbx
+  artifactKey: Guid(9d5ffe1f30dea4b4db0a968c16f5abe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/rock_007.fbx using Guid(9d5ffe1f30dea4b4db0a968c16f5abe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8070502de984165d27b5c349b8276e41') in 0.0249465 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/tree_001.fbx
+  artifactKey: Guid(eaec3ce4a34eaa64fba38024b55c0c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/tree_001.fbx using Guid(eaec3ce4a34eaa64fba38024b55c0c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92905cc081a765889d4df9a6b6de15fc') in 0.0241658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/cliff.fbx
+  artifactKey: Guid(79041dc4cacc9e04aa1957f9125d9bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/cliff.fbx using Guid(79041dc4cacc9e04aa1957f9125d9bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ad3b80a06d47b2abc714f3b348c932a') in 0.0225773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/plant_012.fbx
+  artifactKey: Guid(9ef8c769a96d9934b92ed0450ffc8d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/plant_012.fbx using Guid(9ef8c769a96d9934b92ed0450ffc8d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b5cc91e3f8b2d83f33033b440e1223f') in 0.0228745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/plant_013.fbx
+  artifactKey: Guid(7333b96572a03c54fb3b6569356b74b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/plant_013.fbx using Guid(7333b96572a03c54fb3b6569356b74b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '879e3c925466399c4b9078ba59495205') in 0.0231962 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/wall_002.fbx
+  artifactKey: Guid(b843b59018084524683ef2bda76b08e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/wall_002.fbx using Guid(b843b59018084524683ef2bda76b08e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95d4890f08ac5081f0012f69925bdb49') in 0.0222774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/cliff_008.fbx
+  artifactKey: Guid(2057db45c8156784d816838567f4502e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/cliff_008.fbx using Guid(2057db45c8156784d816838567f4502e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3333b3c4fc00e7dbe64dd84e700d5892') in 0.0223518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/rock.fbx
+  artifactKey: Guid(506463f8f40c77043adf770829181ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/rock.fbx using Guid(506463f8f40c77043adf770829181ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3bde9106760df790b0f535eebca5051') in 0.0214883 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/cliff_004.fbx
+  artifactKey: Guid(9cefb63b6bdd85548912b3da7882a017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/cliff_004.fbx using Guid(9cefb63b6bdd85548912b3da7882a017) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0daaa283d8bd8b63fffee3c75cd6e6b8') in 0.0220273 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Nature and Tank Model Pack/Models/tank-head.fbx
+  artifactKey: Guid(98bb346be407138469431ec22d819dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Nature and Tank Model Pack/Models/tank-head.fbx using Guid(98bb346be407138469431ec22d819dc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '425cd1607b9e7c2dfefefb4e9c0e1e0e') in 0.0224998 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

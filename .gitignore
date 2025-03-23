@@ -58,4 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-새 텍스트 문서.txt
+echo "secrets.txt" >> .gitignore
+git rm --cached secrets.txt
+git commit -m "Remove secrets from git history"
+git push origin main --force

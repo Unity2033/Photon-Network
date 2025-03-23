@@ -9,9 +9,9 @@ public class RoomManager : MonoBehaviourPunCallbacks
     [SerializeField] InputField titleInputField;
     [SerializeField] InputField capacityInputField;
 
-    [SerializeField] Transform contentTransform;
+    [SerializeField] Transform parentTransform;
 
-    private Dictionary<string, GameObject> dictionary = new Dictionary<string, GameObject>();
+    [SerializeField] Dictionary<string, GameObject> dictionary = new Dictionary<string, GameObject>();
 
     void Start()
     {
@@ -21,14 +21,9 @@ public class RoomManager : MonoBehaviourPunCallbacks
         }
     }
 
-    public override void OnJoinedLobby()
-    {
-        PhotonNetwork.IsMessageQueueRunning = true; // 네트워크 이벤트 다시 활성화
-    }
-
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel("Game Scene");
+        PhotonNetwork.LoadLevel("Game");
     }
 
     public void OnCreateRoom()
@@ -46,7 +41,9 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
-        GameObject prefab;
+        Debug.Log(roomList.Count);
+
+        GameObject prefab = null;
 
         foreach (RoomInfo room in roomList)
         {
@@ -64,14 +61,9 @@ public class RoomManager : MonoBehaviourPunCallbacks
                 // 룸이 처음 생성되는 경우
                 if (dictionary.ContainsKey(room.Name) == false)
                 {
-                    GameObject clone = Instantiate(Resources.Load<GameObject>("Room"), contentTransform);
+                    GameObject clone = Instantiate(Resources.Load<GameObject>("Room"), parentTransform);
 
-                    clone.GetComponent<Information>().SetData
-                    (
-                        room.Name,
-                        room.PlayerCount,
-                        room.MaxPlayers
-                    );
+                    clone.GetComponent<Information>().View(room.Name, room.PlayerCount, room.MaxPlayers);
 
                     dictionary.Add(room.Name, clone);
                 }
@@ -79,12 +71,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
                 {
                     dictionary.TryGetValue(room.Name, out prefab);
 
-                    prefab.GetComponent<Information>().SetData
-                    (
-                        room.Name,
-                        room.PlayerCount,
-                        room.MaxPlayers
-                    );
+                    prefab.GetComponent<Information>().View(room.Name, room.PlayerCount, room.MaxPlayers);
                 }
             }
         }

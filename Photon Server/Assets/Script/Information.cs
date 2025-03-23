@@ -14,7 +14,7 @@ public class Information : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinRoom(roomTitle);
     }
 
-    public void SetData(string name, int currentStaff, int maxStaff)
+    public void View(string name, int currentStaff, int maxStaff)
     {
         roomTitle = name;
 

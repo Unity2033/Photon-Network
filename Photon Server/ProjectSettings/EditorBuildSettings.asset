@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/Photon Login.unity
+    path: Assets/Scene/Login.unity
     guid: 5520a70847257d344abbc2be6970776e
   - enabled: 1
-    path: Assets/Scene/Photon Lobby.unity
+    path: Assets/Scene/Lobby.unity
     guid: b992798bf0a530c4fab5050dbe86e4d4
   - enabled: 1
-    path: Assets/Scene/Photon Room.unity
+    path: Assets/Scene/Room.unity
     guid: 9eb0db97f5e9c364090a755023bbca3c
   - enabled: 1
-    path: Assets/Scene/Photon Game.unity
+    path: Assets/Scene/Game.unity
     guid: 10e4ec02744cad44584b9ce1132b41c9
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
