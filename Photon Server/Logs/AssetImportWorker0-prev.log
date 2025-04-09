@@ -15,7 +15,7 @@ C:/Users/nwond/OneDrive/바탕 화면/Photon-Server/Photon Server
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60451
+61295
 -job-worker-count
 5
 -background-job-worker-count
@@ -59,12 +59,12 @@ C:/Users/nwond/OneDrive/바탕 화면/Photon-Server/Photon Server
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11184]  Target information:
+Player connection [24460]  Target information:
 
-Player connection [11184]  * "[IP] 192.168.219.101 [Port] 0 [Flags] 2 [Guid] 3983236551 [EditorId] 3983236551 [Version] 1048832 [Id] WindowsEditor(7,Dinosaur) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [24460]  * "[IP] 192.168.219.101 [Port] 0 [Flags] 2 [Guid] 2251798187 [EditorId] 2251798187 [Version] 1048832 [Id] WindowsEditor(7,Dinosaur) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [11184] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [11184] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24460] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [24460] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -75,7 +75,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 15.99 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 11.17 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.24f1 (11fa355cd605)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/Resources/UnitySubsystems
@@ -91,47 +91,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.005141 seconds.
-- Loaded All Assemblies, in  0.532 seconds
+Registered in 0.005370 seconds.
+- Loaded All Assemblies, in  0.499 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 432 ms
+Android Extension - Scanning For ADB Devices 355 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.937 seconds
-Domain Reload Profiling: 1465ms
-	BeginReloadAssembly (196ms)
+- Finished resetting the current domain, in  0.804 seconds
+Domain Reload Profiling: 1300ms
+	BeginReloadAssembly (143ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (60ms)
-	LoadAllAssembliesAndSetupDomain (210ms)
-		LoadAssemblies (192ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (85ms)
+	LoadAllAssembliesAndSetupDomain (208ms)
+		LoadAssemblies (140ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (206ms)
-			TypeCache.Refresh (204ms)
-				TypeCache.ScanAssembly (184ms)
+		AnalyzeDomain (203ms)
+			TypeCache.Refresh (202ms)
+				TypeCache.ScanAssembly (185ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (938ms)
+	FinalizeReload (804ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (891ms)
+		SetupLoadedEditorAssemblies (754ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (535ms)
+			InitializePlatformSupportModulesInManaged (454ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (8ms)
-			ProcessInitializeOnLoadAttributes (241ms)
-			ProcessInitializeOnLoadMethodAttributes (101ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (179ms)
+			ProcessInitializeOnLoadMethodAttributes (107ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -139,535 +139,109 @@ Domain Reload Profiling: 1465ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.329 seconds
-Refreshing native plugins compatible for Editor in 10.48 ms, found 6 plugins.
+- Loaded All Assemblies, in  1.232 seconds
+Refreshing native plugins compatible for Editor in 9.73 ms, found 6 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 9.71 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 9.21 ms, found 6 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.320 seconds
-Domain Reload Profiling: 2642ms
-	BeginReloadAssembly (479ms)
+- Finished resetting the current domain, in  1.161 seconds
+Domain Reload Profiling: 2387ms
+	BeginReloadAssembly (469ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (649ms)
+		LoadAssemblies (497ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (281ms)
+			TypeCache.Refresh (212ms)
+				TypeCache.ScanAssembly (192ms)
+			BuildScriptInfoCaches (57ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1161ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (908ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (793ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 14.70 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3863 unused Assets / (1.0 MB). Loaded Objects now: 4431.
+Memory consumption went from 122.6 MB to 121.6 MB.
+Total: 11.346200 ms (FindLiveObjects: 0.841200 ms CreateObjectMapping: 0.320000 ms MarkObjects: 8.398200 ms  DeleteObjects: 1.784800 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 14.57 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3816 unused Assets / (0.9 MB). Loaded Objects now: 4432.
+Memory consumption went from 114.9 MB to 114.0 MB.
+Total: 9.551200 ms (FindLiveObjects: 0.843100 ms CreateObjectMapping: 0.284500 ms MarkObjects: 6.988600 ms  DeleteObjects: 1.433200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.785 seconds
+Refreshing native plugins compatible for Editor in 10.22 ms, found 6 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.051 seconds
+Domain Reload Profiling: 1834ms
+	BeginReloadAssembly (239ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
+		CreateAndSetChildDomain (55ms)
 	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (741ms)
-		LoadAssemblies (547ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (455ms)
+		LoadAssemblies (389ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (336ms)
-			TypeCache.Refresh (271ms)
-				TypeCache.ScanAssembly (254ms)
-			BuildScriptInfoCaches (54ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (1320ms)
+		AnalyzeDomain (199ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (176ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1052ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1044ms)
+		SetupLoadedEditorAssemblies (797ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (15ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (107ms)
-			ProcessInitializeOnLoadAttributes (873ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (685ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
 			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 17.98 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3861 unused Assets / (1.1 MB). Loaded Objects now: 4429.
-Memory consumption went from 120.7 MB to 119.5 MB.
-Total: 12.023100 ms (FindLiveObjects: 1.222700 ms CreateObjectMapping: 0.512500 ms MarkObjects: 8.396100 ms  DeleteObjects: 1.889500 ms)
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.832 seconds
-Refreshing native plugins compatible for Editor in 10.66 ms, found 6 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.089 seconds
-Domain Reload Profiling: 1914ms
-	BeginReloadAssembly (238ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (55ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (494ms)
-		LoadAssemblies (428ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (198ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (2ms)
-			BuildScriptInfoCaches (173ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1090ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (825ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (65ms)
-			ProcessInitializeOnLoadAttributes (704ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 16.39 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 14.31 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3859 unused Assets / (0.8 MB). Loaded Objects now: 4430.
-Memory consumption went from 114.9 MB to 114.0 MB.
-Total: 10.335500 ms (FindLiveObjects: 0.763100 ms CreateObjectMapping: 0.342600 ms MarkObjects: 7.873500 ms  DeleteObjects: 1.354800 ms)
+Unloading 3862 unused Assets / (1.0 MB). Loaded Objects now: 4433.
+Memory consumption went from 116.9 MB to 115.9 MB.
+Total: 9.376200 ms (FindLiveObjects: 0.694700 ms CreateObjectMapping: 0.274400 ms MarkObjects: 6.713900 ms  DeleteObjects: 1.691400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 721831.255566 seconds.
-  path: Assets/Script/Managers/LobbyManager.cs
-  artifactKey: Guid(993f7d21998672245ba6b1f5397488d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/Managers/LobbyManager.cs using Guid(993f7d21998672245ba6b1f5397488d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b04b230671c882195277198f78de6e6c') in 0.011235 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 39.265241 seconds.
-  path: Assets/Scene/Game.unity
-  artifactKey: Guid(10e4ec02744cad44584b9ce1132b41c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scene/Game.unity using Guid(10e4ec02744cad44584b9ce1132b41c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8c426223ae2e820fe2dfe97a5a20678') in 0.0005772 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.468697 seconds.
-  path: Assets/Scene/Lobby.unity
-  artifactKey: Guid(b992798bf0a530c4fab5050dbe86e4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scene/Lobby.unity using Guid(b992798bf0a530c4fab5050dbe86e4d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9659429f7de6e04173add0be046e19ab') in 0.0006951 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.740176 seconds.
-  path: Assets/Scene/Login.unity
-  artifactKey: Guid(5520a70847257d344abbc2be6970776e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scene/Login.unity using Guid(5520a70847257d344abbc2be6970776e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9df82d5681a5f3124d6f621a32868fb5') in 0.0005937 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.368738 seconds.
-  path: Assets/Scene/Photon Room.unity
-  artifactKey: Guid(9eb0db97f5e9c364090a755023bbca3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scene/Photon Room.unity using Guid(9eb0db97f5e9c364090a755023bbca3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f3ad92f4f42a739e5aa463767f6c541') in 0.0008223 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.736107 seconds.
-  path: Assets/Scene/Room.unity
-  artifactKey: Guid(9eb0db97f5e9c364090a755023bbca3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scene/Room.unity using Guid(9eb0db97f5e9c364090a755023bbca3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85821099e68b15ebb68731d154dab528') in 0.0007088 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 17.34 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3813 unused Assets / (1.0 MB). Loaded Objects now: 4432.
-Memory consumption went from 115.3 MB to 114.3 MB.
-Total: 9.771100 ms (FindLiveObjects: 0.718700 ms CreateObjectMapping: 0.353100 ms MarkObjects: 7.272800 ms  DeleteObjects: 1.424700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.910 seconds
-Refreshing native plugins compatible for Editor in 10.29 ms, found 6 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.128 seconds
-Domain Reload Profiling: 2032ms
-	BeginReloadAssembly (244ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (551ms)
-		LoadAssemblies (458ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (227ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (2ms)
-			BuildScriptInfoCaches (197ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (1129ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (885ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (70ms)
-			ProcessInitializeOnLoadAttributes (762ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 12.53 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3859 unused Assets / (1.2 MB). Loaded Objects now: 4433.
-Memory consumption went from 117.3 MB to 116.1 MB.
-Total: 9.205600 ms (FindLiveObjects: 0.558300 ms CreateObjectMapping: 0.197900 ms MarkObjects: 6.951800 ms  DeleteObjects: 1.495700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 19.07 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3813 unused Assets / (1.2 MB). Loaded Objects now: 4433.
-Memory consumption went from 117.2 MB to 116.0 MB.
-Total: 11.129600 ms (FindLiveObjects: 0.818500 ms CreateObjectMapping: 0.380700 ms MarkObjects: 8.057100 ms  DeleteObjects: 1.871400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 15.53 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3813 unused Assets / (1.0 MB). Loaded Objects now: 4433.
-Memory consumption went from 117.2 MB to 116.2 MB.
-Total: 8.951400 ms (FindLiveObjects: 1.009600 ms CreateObjectMapping: 0.444600 ms MarkObjects: 6.076800 ms  DeleteObjects: 1.419200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.778 seconds
-Refreshing native plugins compatible for Editor in 11.40 ms, found 6 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.096 seconds
-Domain Reload Profiling: 1868ms
-	BeginReloadAssembly (221ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (49ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (454ms)
-		LoadAssemblies (394ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (184ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (2ms)
-			BuildScriptInfoCaches (161ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1096ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (851ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (724ms)
-			ProcessInitializeOnLoadMethodAttributes (26ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 15.73 ms, found 6 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3859 unused Assets / (1.0 MB). Loaded Objects now: 4434.
-Memory consumption went from 117.3 MB to 116.4 MB.
-Total: 8.718600 ms (FindLiveObjects: 0.702300 ms CreateObjectMapping: 0.369800 ms MarkObjects: 6.315400 ms  DeleteObjects: 1.329400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 289.300987 seconds.
-  path: Assets/Nature and Tank Model Pack/Materials
-  artifactKey: Guid(0956f645f5e9fe7428df3c847d223f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Materials using Guid(0956f645f5e9fe7428df3c847d223f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01cf6bee54a8ff54192b27d8d507da8c') in 0.0069677 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.067409 seconds.
-  path: Assets/Nature and Tank Model Pack/Materials/mat-1.mat
-  artifactKey: Guid(11121992ad458184e93cbf9e25d563b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Materials/mat-1.mat using Guid(11121992ad458184e93cbf9e25d563b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '137dc8de209004dc92f8a7f261df01c7') in 0.1422866 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Nature and Tank Model Pack/Materials/mat-floor-1.mat
-  artifactKey: Guid(8d000d5618f191c4ba22412c18714faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Materials/mat-floor-1.mat using Guid(8d000d5618f191c4ba22412c18714faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85d2d843433862a0f00e5048a070e19d') in 0.0161247 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.056605 seconds.
-  path: Assets/Nature and Tank Model Pack/Textures/TexturePack_Flat_2.psd
-  artifactKey: Guid(a7826efcaf56ca840b2f74e6e248c3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Textures/TexturePack_Flat_2.psd using Guid(a7826efcaf56ca840b2f74e6e248c3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c9b6c38eb68499120f06b2b668c6beeb') in 0.0414931 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.340524 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/box.prefab
-  artifactKey: Guid(836714402ce98484e984c27631eaaee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/box.prefab using Guid(836714402ce98484e984c27631eaaee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1536c780f0b242443ab7e60af2664bfe') in 0.0342797 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003403 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/building.prefab
-  artifactKey: Guid(24212a5f8f964554980402f8f889e64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/building.prefab using Guid(24212a5f8f964554980402f8f889e64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f4d4a83fb4cf925ec85cff10846bcc9') in 0.0240731 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/cliff_002.prefab
-  artifactKey: Guid(5594f4d1f4c234740b9fb8b6a9312125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/cliff_002.prefab using Guid(5594f4d1f4c234740b9fb8b6a9312125) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb67991e47c2a1d63d262cf2d66f696f') in 0.0197309 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/cliff_004.prefab
-  artifactKey: Guid(061a05c3c1453e34b9e0c0c6aaefa379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/cliff_004.prefab using Guid(061a05c3c1453e34b9e0c0c6aaefa379) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b44e7733e2d6b200f5d9758dbe5464e4') in 0.0208353 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/cliff_008.prefab
-  artifactKey: Guid(9bf0d7b635595764896f280a79faad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/cliff_008.prefab using Guid(9bf0d7b635595764896f280a79faad76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'abe182263721135479fb068b8223a363') in 0.0204901 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/cliff_007.prefab
-  artifactKey: Guid(328535187cd368447a655dcfa4f16d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/cliff_007.prefab using Guid(328535187cd368447a655dcfa4f16d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e4a1e46c5c5c4b30daa1ddb754bde6a') in 0.0231094 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/ground.prefab
-  artifactKey: Guid(2f7f2956c95c593449d0f1e4a42be145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/ground.prefab using Guid(2f7f2956c95c593449d0f1e4a42be145) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '45d19ee5e4fc3bb554de6ef47e9a716c') in 0.0205483 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/plant_005.prefab
-  artifactKey: Guid(7c4fa6efecf74a6429a04e23d2b106ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/plant_005.prefab using Guid(7c4fa6efecf74a6429a04e23d2b106ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8429d77c16acd4968d95a052ba14c015') in 0.0234292 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/plant_009.prefab
-  artifactKey: Guid(6a8b5f5b3a50c074d818f50548739374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/plant_009.prefab using Guid(6a8b5f5b3a50c074d818f50548739374) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '415253cfccc87fa05f81857346d01b04') in 0.0216656 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/plant_011.prefab
-  artifactKey: Guid(f046507d5aa417d4b9fcc9ce52f8b225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/plant_011.prefab using Guid(f046507d5aa417d4b9fcc9ce52f8b225) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '55be53b77cf6a957e96fef3bd9fb7f47') in 0.0222748 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/rock.prefab
-  artifactKey: Guid(dff791d4d13b97242b9503ff1695203b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/rock.prefab using Guid(dff791d4d13b97242b9503ff1695203b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0853c33b7620adf8c70560ad1681e388') in 0.0199847 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/plant_013.prefab
-  artifactKey: Guid(b1b31d79e74e41846aeb08ce912d686c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/plant_013.prefab using Guid(b1b31d79e74e41846aeb08ce912d686c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1deb68c6b9c894f4b8bdfa1c57608ad9') in 0.0210182 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/rock_006.prefab
-  artifactKey: Guid(5614ccdf1f14e0744a1ac31147845660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/rock_006.prefab using Guid(5614ccdf1f14e0744a1ac31147845660) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74b719de46f7505b1e7ba41c6f3b234a') in 0.0206133 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/rock_009.prefab
-  artifactKey: Guid(e61a8dd58c7536b4f9fdd037ab75e2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/rock_009.prefab using Guid(e61a8dd58c7536b4f9fdd037ab75e2ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08c3494d7336576a28637878e0a5e8dc') in 0.0213444 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/tank-body.prefab
-  artifactKey: Guid(42ffa74f54a3b5f469196958719230b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/tank-body.prefab using Guid(42ffa74f54a3b5f469196958719230b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b18146fbfc3401e21295f950dd9dfe8f') in 0.0291272 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/tank-body_003.prefab
-  artifactKey: Guid(e350a24e86e5c284d92aa431ec207e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/tank-body_003.prefab using Guid(e350a24e86e5c284d92aa431ec207e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4153edec848fb3445ea705bb2703e28c') in 0.0262783 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/tree_005.prefab
-  artifactKey: Guid(febb0dc85273b9a4497ff0f4e4f04b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/tree_005.prefab using Guid(febb0dc85273b9a4497ff0f4e4f04b57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '953b029f7fb8c1663abceba6955946b3') in 0.0196433 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/wall_001.prefab
-  artifactKey: Guid(0c1fca4fa0ac6474da2abc8ba361fe94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/wall_001.prefab using Guid(0c1fca4fa0ac6474da2abc8ba361fe94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1371ec9db88cf28f30639459fec4e75b') in 0.0196047 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/wall_003.prefab
-  artifactKey: Guid(a99a7f08ef7a5f44b852e04846550b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/wall_003.prefab using Guid(a99a7f08ef7a5f44b852e04846550b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c12c77a4c668c32a9a620a4dadbbf73') in 0.0237172 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/tree_003.prefab
-  artifactKey: Guid(be1eaa72962b8f04c8fb2e72446b9784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/tree_003.prefab using Guid(be1eaa72962b8f04c8fb2e72446b9784) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b37052bab7b2ec93e0682b801d566598') in 0.0231366 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/wall_004.prefab
-  artifactKey: Guid(e69e5950cf8339c4b96725344c7bdd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/wall_004.prefab using Guid(e69e5950cf8339c4b96725344c7bdd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd4e33a63d0e60260bc94be29bcc7d40') in 0.0219788 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/rock_011.prefab
-  artifactKey: Guid(c3f219f84649b8c4ab76ca366082715e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/rock_011.prefab using Guid(c3f219f84649b8c4ab76ca366082715e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d4ccc846c71596aeeb115b79ba4c43e') in 0.0235045 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/rock_001.prefab
-  artifactKey: Guid(1ab882823bdd368449dd01c41aed00c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/rock_001.prefab using Guid(1ab882823bdd368449dd01c41aed00c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02fee8af8399de9b303bc9567436d586') in 0.0213873 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/plant_002.prefab
-  artifactKey: Guid(b9d0807c233784147803983163281d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/plant_002.prefab using Guid(b9d0807c233784147803983163281d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '61416c682fa0a6b99cef16281dde663c') in 0.0226951 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/ground_001.prefab
-  artifactKey: Guid(3fa517b8ecdb2e849bf3fa8ffdf79a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/ground_001.prefab using Guid(3fa517b8ecdb2e849bf3fa8ffdf79a5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b2692c6fba8516cf087654cabfb7c781') in 0.0217994 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/rock_003.prefab
-  artifactKey: Guid(c3bfe9ccea6d92640bd4fcf26ddfc7e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/rock_003.prefab using Guid(c3bfe9ccea6d92640bd4fcf26ddfc7e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f7af262b4972703f281114c97cccc04') in 0.0208891 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/plant_001.prefab
-  artifactKey: Guid(9e7e9e9fef8f10841be2c38efd541fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/plant_001.prefab using Guid(9e7e9e9fef8f10841be2c38efd541fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50939d1c86d4e3dc04aede0a19407278') in 0.1277905 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Nature and Tank Model Pack/Prefabs/plant_008.prefab
-  artifactKey: Guid(21aae944ff4701d409d40264502a42c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Nature and Tank Model Pack/Prefabs/plant_008.prefab using Guid(21aae944ff4701d409d40264502a42c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c00a6b54e7a2fa7a53913ed24fb6983') in 0.0236166 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

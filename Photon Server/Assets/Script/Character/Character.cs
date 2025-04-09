@@ -56,4 +56,14 @@ public class Character : MonoBehaviourPun
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        PhotonView clone = other.GetComponent<PhotonView>();
+
+        if (clone.IsMine)
+        {
+            PhotonNetwork.Destroy(clone.gameObject);
+        }
+    }
+
 }

@@ -482,18 +482,18 @@
 "Assets/Script/Character/Rotation.cs"
 "Assets/Script/EventManager.cs"
 "Assets/Script/Information.cs"
+"Assets/Script/Item.cs"
 "Assets/Script/Managers/DialogManager.cs"
+"Assets/Script/Managers/GameManager.cs"
 "Assets/Script/Managers/LobbyManager.cs"
 "Assets/Script/Managers/MasterManager.cs"
 "Assets/Script/Managers/MouseManager.cs"
 "Assets/Script/Managers/NickNameManager.cs"
 "Assets/Script/Managers/PlayfabManager.cs"
-"Assets/Script/Managers/RoomManager.cs"
 "Assets/Script/NickName.cs"
 "Assets/Script/Pause.cs"
 "Assets/Script/RotationGameObject.cs"
 "Assets/Script/Spawner Manager/CharacterSpawner.cs"
-"Assets/Script/Spawner Manager/SpawnManager.cs"
 -langversion:9.0
 /deterministic
 /optimize+

@@ -2,33 +2,70 @@ using UnityEngine;
 using Photon.Realtime;
 using Photon.Pun;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
-    [SerializeField] Dropdown dropDown;
+    [SerializeField] InputField titleInputField;
+    [SerializeField] InputField capacityInputField;
 
-    public void Connect()
+    [SerializeField] Transform parentTransform;
+
+    [SerializeField] Dictionary<string, GameObject> dictionary = new Dictionary<string, GameObject>();
+
+    public override void OnJoinedRoom()
     {
-        // 서버에 접속하는 함수
-        PhotonNetwork.ConnectUsingSettings();
+        PhotonNetwork.LoadLevel("Game");
     }
 
-    public override void OnConnectedToMaster()
+    public void OnCreateRoom()
     {
-        // JoinLobby : 특정 로비를 생성하여 진입하는 함수
-        PhotonNetwork.JoinLobby
-        (
-            new TypedLobby
-            (
-                 dropDown.options[dropDown.value].text,
-                 LobbyType.Default
-            )
-        );
-    }
-    public override void OnJoinedLobby()
-    {
-        PhotonNetwork.IsMessageQueueRunning = true;
+        RoomOptions roomOptions = new RoomOptions();
 
-        PhotonNetwork.LoadLevel("Room");
+        roomOptions.MaxPlayers = byte.Parse(capacityInputField.text);
+
+        roomOptions.IsOpen = true;
+
+        roomOptions.IsVisible = true;
+
+        PhotonNetwork.CreateRoom(titleInputField.text, roomOptions);
+    }
+
+    public override void OnRoomListUpdate(List<RoomInfo> roomList)
+    {
+        Debug.Log(roomList.Count);
+
+        GameObject prefab = null;
+
+        foreach (RoomInfo room in roomList)
+        {
+            // 룸이 삭제된 경우
+            if (room.RemovedFromList == true)
+            {
+                dictionary.TryGetValue(room.Name, out prefab);
+
+                Destroy(prefab);
+
+                dictionary.Remove(room.Name);
+            }
+            else // 룸의 정보가 변경되는 경우
+            {
+                // 룸이 처음 생성되는 경우
+                if (dictionary.ContainsKey(room.Name) == false)
+                {
+                    GameObject clone = Instantiate(Resources.Load<GameObject>("Room"), parentTransform);
+
+                    clone.GetComponent<Information>().View(room.Name, room.PlayerCount, room.MaxPlayers);
+
+                    dictionary.Add(room.Name, clone);
+                }
+                else // 룸의 정보가 변경되는 경우
+                {
+                    dictionary.TryGetValue(room.Name, out prefab);
+
+                    prefab.GetComponent<Information>().View(room.Name, room.PlayerCount, room.MaxPlayers);
+                }
+            }
+        }
     }
 }

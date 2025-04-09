@@ -4,17 +4,25 @@ using UnityEngine.UI;
 
 public class NickName : MonoBehaviourPunCallbacks
 {
-    public Text nickName;
+    public Text nameText;
     private Camera virtualCamera;
 
     private void Awake()
     {
         virtualCamera = Camera.main;
-    }
 
-    void Start()
-    {
-        nickName.text = photonView.Owner.NickName;
+        nameText = GetComponent<Text>();
+
+        PhotonNetwork.LocalPlayer.NickName = PlayerPrefs.GetString("Name");
+
+        if (photonView.IsMine)
+        {
+            nameText.text = PhotonNetwork.LocalPlayer.NickName;
+        }
+        else
+        {
+            nameText.text = photonView.Owner.NickName;
+        }
     }
 
     void Update()

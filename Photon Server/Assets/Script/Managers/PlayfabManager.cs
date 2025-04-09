@@ -3,6 +3,7 @@ using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
 using PlayFab.ClientModels;
+using Photon.Realtime;
 
 public class PlayfabManager : MonoBehaviourPunCallbacks
 {
@@ -15,7 +16,18 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
 
         PhotonNetwork.GameVersion = "1.0f";
 
-        PhotonNetwork.LoadLevel("Photon Lobby");
+        PhotonNetwork.ConnectUsingSettings();
+    }
+
+    public override void OnJoinedLobby()
+    {
+        PhotonNetwork.LoadLevel("Lobby");
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        // JoinLobby : 특정 로비를 생성하여 진입하는 함수
+        PhotonNetwork.JoinLobby();
     }
 
     public void Success(RegisterPlayFabUserResult result)
@@ -23,9 +35,8 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
        
     }
 
-    public void SignUp()
+    public void Join()
     {
-        // RegisterPlayFabUserRequest : ?쒕쾭???좎?瑜??깅줉?섍린 ?꾪븳 ?대옒??
         var request = new RegisterPlayFabUserRequest
         {
             Email = email.text,
@@ -41,7 +52,7 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
         );
     }
 
-    public void Login()
+    public void Access()
     {
         var request = new LoginWithEmailAddressRequest
         {
