@@ -5,15 +5,33 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
+    [SerializeField] double time;
+    [SerializeField] double initializeTime;
+
+    [SerializeField] int minute;
+    [SerializeField] int second;
+    [SerializeField] int milliseconds;
+
     [SerializeField] int count = 4;
+
+    public void Awake()
+    {
+        initializeTime = PhotonNetwork.Time;
+    }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         if (PhotonNetwork.CurrentRoom.PlayerCount >= count)
         {
-            Debug.Log("Game Start");
             PhotonNetwork.CurrentRoom.IsOpen = false;
         }
     }
+    private void Update()
+    {
+        time = PhotonNetwork.Time - initializeTime;
 
+        minute = (int)time / 60;
+        second = (int)time % 60;
+        milliseconds = (int)(time * 100) % 100;
+    }
 }

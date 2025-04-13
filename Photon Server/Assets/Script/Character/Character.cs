@@ -1,20 +1,17 @@
 using UnityEngine;
 using Photon.Pun;
 
-[RequireComponent(typeof(Move))]
 [RequireComponent(typeof(Rotation))]
 public class Character : MonoBehaviourPun
 {
-    [SerializeField] Move move;
-    [SerializeField] Rotation rotation;
+    [SerializeField] float speed;
+    [SerializeField] Vector3 direction;
     [SerializeField] Camera remoteCamera;
-    [SerializeField] Rigidbody rigidBody;
+    [SerializeField] CharacterController characterController;
 
     private void Awake()
     {
-        move = GetComponent<Move>();
-        rotation = GetComponent<Rotation>();
-        rigidBody = GetComponent<Rigidbody>();
+        characterController = GetComponent<CharacterController>();  
     }
 
     void Start()
@@ -31,16 +28,23 @@ public class Character : MonoBehaviourPun
             MouseManager.Instance.SetMouse(true);
         }
 
-        move.OnKeyUpdate();
-        rotation.OnKeyUpdate();
+        Keyboard();
+
+        Move();
     }
 
-    private void FixedUpdate()
+    public void Keyboard()
     {
-        if (photonView.IsMine == false) return;
+        direction.x = Input.GetAxisRaw("Horizontal");
+        direction.z = Input.GetAxisRaw("Vertical");
 
-        move.OnMove(rigidBody);
-        rotation.RotateY(rigidBody);
+        // direction 방향을 단위 벡터로 설정합니다.
+        direction.Normalize();
+    }
+
+    public void Move()
+    {      
+       characterController.Move(transform.TransformDirection(direction * speed * Time.deltaTime));
     }
 
     public void DisableCamera()
