@@ -11,7 +11,7 @@ public class MasterManager : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.IsMasterClient)
         {
-            StartCoroutine(Create());
+           // StartCoroutine(Create());
         }
     }
 

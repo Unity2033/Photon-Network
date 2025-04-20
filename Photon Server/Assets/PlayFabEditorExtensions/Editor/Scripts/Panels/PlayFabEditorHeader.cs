@@ -25,26 +25,17 @@ namespace PlayFab.PfEditor
 
                 float gmAnchor = EditorGUIUtility.currentViewWidth - 30;
 
-
+               
                 if (EditorGUIUtility.currentViewWidth > 375)
                 {
                     gmAnchor = EditorGUIUtility.currentViewWidth - 140;
-                    GUILayout.BeginArea(new Rect(gmAnchor, 10, 140, 42));
+                    GUILayout.BeginArea(new Rect(gmAnchor, 10, 140, 42)); 
                     GUILayout.BeginHorizontal();
-                    if (GUILayout.Button("GAME MANAGER", PlayFabEditorHelper.uiStyle.GetStyle("textButton"), GUILayout.MaxWidth(105)))
-                    {
-                        OnDashbaordClicked();
-                    }
                 }
                 else
                 {
                     GUILayout.BeginArea(new Rect(gmAnchor, 10, EditorGUIUtility.currentViewWidth * .25f, 42));
                     GUILayout.BeginHorizontal();
-                }
-
-                if (GUILayout.Button("", PlayFabEditorHelper.uiStyle.GetStyle("gmIcon")))
-                {
-                    OnDashbaordClicked();
                 }
                 GUILayout.EndHorizontal();
                 GUILayout.EndArea();
@@ -53,15 +44,7 @@ namespace PlayFab.PfEditor
             }
 
             ProgressBar.Draw();
-
         }
-
-
-        private static void OnDashbaordClicked()
-        {
-            Help.BrowseURL(PlayFabEditorDataService.ActiveTitle != null ? PlayFabEditorDataService.ActiveTitle.GameManagerUrl : PlayFabEditorHelper.GAMEMANAGER_URL);
-        }
-
     }
 }
 

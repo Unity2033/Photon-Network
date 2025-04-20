@@ -7,8 +7,6 @@ public class Pause : MonoBehaviourPunCallbacks
 {
     public void Resume()
     {
-        MouseManager.Instance.SetMouse(false);
-
         gameObject.SetActive(false);
     }
 

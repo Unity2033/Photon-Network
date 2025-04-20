@@ -478,20 +478,20 @@
 "Assets/Photon/PhotonVoice/Demos/Fusion/DemoNetworkObject/PrefabSpawner.cs"
 "Assets/Script/Character/Character.cs"
 "Assets/Script/Character/Head.cs"
-"Assets/Script/Character/Rotation.cs"
 "Assets/Script/EventManager.cs"
 "Assets/Script/Information.cs"
 "Assets/Script/Item.cs"
+"Assets/Script/Managers/CharacterManager.cs"
+"Assets/Script/Managers/CharacterSpawner.cs"
 "Assets/Script/Managers/DialogManager.cs"
 "Assets/Script/Managers/GameManager.cs"
 "Assets/Script/Managers/LobbyManager.cs"
 "Assets/Script/Managers/MasterManager.cs"
-"Assets/Script/Managers/MouseManager.cs"
 "Assets/Script/Managers/PlayfabManager.cs"
+"Assets/Script/Mouse.cs"
 "Assets/Script/NickName.cs"
 "Assets/Script/Pause.cs"
 "Assets/Script/RotationGameObject.cs"
-"Assets/Script/Spawner Manager/CharacterSpawner.cs"
 -langversion:9.0
 /deterministic
 /optimize+

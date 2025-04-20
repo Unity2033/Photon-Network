@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using PlayFab.ClientModels;
 using Photon.Realtime;
+using System.Collections;
 
 public class PlayfabManager : MonoBehaviourPunCallbacks
 {
@@ -29,6 +30,30 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
         // JoinLobby : 특정 로비를 생성하여 진입하는 함수
         PhotonNetwork.JoinLobby();
     }
+
+    public IEnumerator Connect()
+    {
+        // Photon의 NameServer에서 MasterServer로 넘어가는 중
+        PhotonNetwork.ConnectUsingSettings();  // NameServer에서 자동으로 MasterServer로 연결
+
+        // 3. 서버 연결 대기
+        float timeout = 5f;  // 최대 대기 시간 (초)
+        float time = 0;
+
+        // 서버 연결이 완료되거나 시간 초과 될 때까지 대기
+        while (PhotonNetwork.IsConnectedAndReady == false)
+        {
+            if (time < timeout)  // 연결 시간 초과 처리
+            {
+                timeout -= Time.deltaTime;
+                yield break;
+            }
+
+
+            yield return null;  // 한 프레임 대기
+        }
+    }
+
 
     public void Success(RegisterPlayFabUserResult result)
     {
@@ -70,6 +95,6 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
 
     public void Failure(PlayFabError error)
     {
-       
+        Debug.Log("AA");
     }
 }

@@ -1,11 +1,17 @@
 using UnityEngine;
 using Photon.Pun;
 
-[RequireComponent(typeof(Rotation))]
 public class Character : MonoBehaviourPun
 {
     [SerializeField] float speed;
+    [SerializeField] float power;
+    [SerializeField] float mouseX;
+    [SerializeField] float gravity;
+    [SerializeField] float rotationVelocity;
+
     [SerializeField] Vector3 direction;
+    [SerializeField] Vector3 inputDirection;
+    
     [SerializeField] Camera remoteCamera;
     [SerializeField] CharacterController characterController;
 
@@ -23,28 +29,60 @@ public class Character : MonoBehaviourPun
     {
         if (photonView.IsMine == false) return;
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            MouseManager.Instance.SetMouse(true);
-        }
+        Control();
 
-        Keyboard();
+        Jump();
 
         Move();
+
+        Rotate();
+
+
     }
 
-    public void Keyboard()
+    void Jump()
     {
-        direction.x = Input.GetAxisRaw("Horizontal");
-        direction.z = Input.GetAxisRaw("Vertical");
+        if (characterController.isGrounded)
+        {
+            direction.y = -1.0f;
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                direction.y = power;
+            }
+        }
+        else
+        {
+            direction.y -= gravity * Time.deltaTime;
+        }
+    }
+
+    public void Control()
+    {
+        inputDirection.x = Input.GetAxisRaw("Horizontal");
+        inputDirection.z = Input.GetAxisRaw("Vertical");
 
         // direction 방향을 단위 벡터로 설정합니다.
-        direction.Normalize();
+        inputDirection.Normalize();
+
+        // mouseX에 마우스로 입력한 값을 저장합니다.
+        mouseX += Input.GetAxisRaw("Mouse X") * rotationVelocity * Time.deltaTime;
+
+        inputDirection = characterController.transform.TransformDirection(inputDirection);
     }
 
     public void Move()
     {      
-       characterController.Move(transform.TransformDirection(direction * speed * Time.deltaTime));
+        Vector3 vector3 = new Vector3(inputDirection.x, direction.y, inputDirection.z);
+
+        characterController.Move(vector3 * speed * Time.deltaTime);
+
+        direction.y = vector3.y;
+    }
+
+    public void Rotate()
+    {
+        transform.eulerAngles = new Vector3(0, mouseX, 0);
     }
 
     public void DisableCamera()
