@@ -478,6 +478,7 @@
 "Assets/Photon/PhotonVoice/Demos/Fusion/DemoNetworkObject/PrefabSpawner.cs"
 "Assets/Script/Character/Character.cs"
 "Assets/Script/Character/Head.cs"
+"Assets/Script/DestroyZone.cs"
 "Assets/Script/EventManager.cs"
 "Assets/Script/Information.cs"
 "Assets/Script/Item.cs"
@@ -490,7 +491,6 @@
 "Assets/Script/Managers/PlayfabManager.cs"
 "Assets/Script/Mouse.cs"
 "Assets/Script/NickName.cs"
-"Assets/Script/Pause.cs"
 "Assets/Script/RotationGameObject.cs"
 -langversion:9.0
 /deterministic

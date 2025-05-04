@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviourPunCallbacks
     [SerializeField] int second;
     [SerializeField] int milliseconds;
 
-    [SerializeField] int count = 4;
-
     public void Awake()
     {
         initializeTime = PhotonNetwork.Time;
@@ -21,11 +19,12 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
-        if (PhotonNetwork.CurrentRoom.PlayerCount >= count)
+        if (PhotonNetwork.CurrentRoom.PlayerCount >= PhotonNetwork.CurrentRoom.MaxPlayers)
         {
             PhotonNetwork.CurrentRoom.IsOpen = false;
         }
     }
+
     private void Update()
     {
         time = PhotonNetwork.Time - initializeTime;
@@ -33,5 +32,15 @@ public class GameManager : MonoBehaviourPunCallbacks
         minute = (int)time / 60;
         second = (int)time % 60;
         milliseconds = (int)(time * 100) % 100;
+    }
+
+    public void Exit()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
+
+    public override void OnLeftRoom()
+    {
+        PhotonNetwork.LoadLevel("Lobby Scene");
     }
 }

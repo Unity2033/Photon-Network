@@ -1,5 +1,6 @@
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.EventSystems;
 
 public class Character : MonoBehaviourPun
 {
@@ -11,7 +12,9 @@ public class Character : MonoBehaviourPun
 
     [SerializeField] Vector3 direction;
     [SerializeField] Vector3 inputDirection;
-    
+
+    [SerializeField] Vector3 initializeDirection;
+
     [SerializeField] Camera remoteCamera;
     [SerializeField] CharacterController characterController;
 
@@ -23,11 +26,19 @@ public class Character : MonoBehaviourPun
     void Start()
     {
         DisableCamera();
+
+        initializeDirection = transform.position;
     }
 
     void Update()
     {
         if (photonView.IsMine == false) return;
+
+        // UI에 포커스가 있다면 입력 무시
+        if (EventSystem.current.currentSelectedGameObject != null)
+        {
+            return;
+        }
 
         Control();
 
@@ -98,13 +109,25 @@ public class Character : MonoBehaviourPun
         }
     }
 
+    public void InitializePosition()
+    {
+        characterController.enabled = false;
+
+        transform.position = initializeDirection;
+
+        characterController.enabled = true;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        PhotonView clone = other.GetComponent<PhotonView>();
-
-        if (clone.IsMine)
+        if (other.tag == "Authorized")
         {
-            PhotonNetwork.Destroy(clone.gameObject);
+            PhotonView clone = other.GetComponent<PhotonView>();
+
+            if (clone.IsMine)
+            {
+                PhotonNetwork.Destroy(clone.gameObject);
+            }
         }
     }
 
