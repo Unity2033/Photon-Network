@@ -25,7 +25,6 @@ public class CharacterManager : MonoBehaviourPunCallbacks
             Transform clone = Instantiate(Resources.Load<Transform>("Create Position " + i));
 
             transformList.Add(clone);
-
         }
     }
 }

@@ -1,8 +1,11 @@
-using UnityEngine;
-using Photon.Realtime;
 using Photon.Pun;
-using UnityEngine.UI;
+using Photon.Realtime;
+using PlayFab;
+using PlayFab.ClientModels;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
@@ -42,8 +45,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
-        Debug.Log(roomList.Count);
-
         GameObject prefab = null;
 
         foreach (RoomInfo room in roomList)

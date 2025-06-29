@@ -63,6 +63,14 @@
       "version": "1.0.0",
       "source": "builtin"
     },
+    "com.unity.scriptablebuildpipeline@2.1.5": {
+      "name": "com.unity.scriptablebuildpipeline",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.scriptablebuildpipeline",
+      "fingerprint": "8cf66f134cb3f8a955d489173bfd88b3df4f8bf0",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "2.1.5",
+      "source": "registry"
+    },
     "com.unity.test-framework@1.4.5": {
       "name": "com.unity.test-framework",
       "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.test-framework",

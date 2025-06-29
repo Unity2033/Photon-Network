@@ -38,7 +38,7 @@ public class DialogManager : MonoBehaviourPunCallbacks
     void Talk(string message)
     {
         // prefab을 하나 생성한 다음 text에 값을 설정합니다.
-        GameObject talk = Instantiate(Resources.Load<GameObject>("Talk"));
+        GameObject talk = Instantiate(Resources.Load<GameObject>("String"));
 
         // prefab 오브젝트의 Text 컴포넌트로 접근해서 text의 값을 설정합니다.
         talk.GetComponent<Text>().text = message;

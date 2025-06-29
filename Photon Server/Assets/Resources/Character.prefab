@@ -1894,6 +1894,7 @@ MonoBehaviour:
   rotationVelocity: 300
   direction: {x: 0, y: 0, z: 0}
   inputDirection: {x: 0, y: 0, z: 0}
+  initializeDirection: {x: 0, y: 0, z: 0}
   remoteCamera: {fileID: 4669745696127046630}
   characterController: {fileID: 0}
 --- !u!1 &7552392930257810830
