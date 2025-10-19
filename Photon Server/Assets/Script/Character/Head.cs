@@ -6,6 +6,7 @@ public class Head : MonoBehaviourPunCallbacks
     [SerializeField] float speed;
     [SerializeField] float mouseY;
 
+
     void Update()
     {
         if (photonView.IsMine == false) return;
@@ -23,4 +24,5 @@ public class Head : MonoBehaviourPunCallbacks
 
         transform.localEulerAngles = new Vector3(-mouseY, 0, 0);
     }
+
 }

@@ -1,351 +1,454 @@
 {
   "context": {
     "projectPath": "C:/Users/nwond/OneDrive/바탕 화면/Photon-Server/Photon Server/Packages",
-    "unityVersion": "6000.0.24f1"
+    "unityVersion": "6000.2.6f2"
   },
   "inputs": [
     "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Packages\\manifest.json",
-    "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Packages\\packages-lock.json"
+    "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Packages\\packages-lock.json",
+    "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
-    "com.unity.ai.navigation@2.0.4": {
+    "com.unity.ai.navigation@2.0.9": {
       "name": "com.unity.ai.navigation",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ai.navigation",
-      "fingerprint": "3f89ad87253dcaae2d0bb583bd5ef4c4f2c17764",
-      "editorCompatibility": "2023.2.0a18",
-      "version": "2.0.4",
-      "source": "registry"
+      "displayName": "AI Navigation",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ai.navigation@5218e4bf7edc",
+      "fingerprint": "5218e4bf7edc04fcad4ed3836c1c41aef334b996",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "2.0.9",
+      "source": "registry",
+      "testable": false
     },
-    "com.unity.collab-proxy@2.5.2": {
+    "com.unity.collab-proxy@2.9.3": {
       "name": "com.unity.collab-proxy",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.collab-proxy",
-      "fingerprint": "da7e55b87e08569f31766e7cabc37bc033c9c7f9",
-      "editorCompatibility": "2020.3.48f1",
-      "version": "2.5.2",
-      "source": "registry"
+      "displayName": "Unity Version Control",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.collab-proxy@ab839cc7d2ad",
+      "fingerprint": "ab839cc7d2adf143e5378baf46edc31cbc5d84f7",
+      "editorCompatibility": "2021.3.0f1",
+      "version": "2.9.3",
+      "source": "registry",
+      "testable": false
     },
     "com.unity.feature.development@1.0.2": {
       "name": "com.unity.feature.development",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.feature.development",
-      "fingerprint": "c770b6a36a30949b030c5ec02d835f771b975cbb",
+      "displayName": "Engineering",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.feature.development@767aadbc6eb7",
+      "fingerprint": "767aadbc6eb72681a4ca807c8fa248e0230a0cef",
       "version": "1.0.2",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
-    "com.unity.ide.rider@3.0.31": {
+    "com.unity.ide.rider@3.0.37": {
       "name": "com.unity.ide.rider",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ide.rider",
-      "fingerprint": "7921be93db40ec070fcb01ed82d1c3df1bbdddcd",
-      "editorCompatibility": "2019.2.6f1",
-      "version": "3.0.31",
-      "source": "registry"
+      "displayName": "JetBrains Rider Editor",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ide.rider@0baf0f91edc0",
+      "fingerprint": "0baf0f91edc004d6f71bbd74a38e2503a5f1228b",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "3.0.37",
+      "source": "registry",
+      "testable": false
     },
-    "com.unity.ide.visualstudio@2.0.22": {
+    "com.unity.ide.visualstudio@2.0.23": {
       "name": "com.unity.ide.visualstudio",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ide.visualstudio",
-      "fingerprint": "8140e851d83e922ca2021b04a89519de94ebe38c",
+      "displayName": "Visual Studio Editor",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ide.visualstudio@198cdf337d13",
+      "fingerprint": "198cdf337d13c83ca953581515630d66b779e92b",
       "editorCompatibility": "2019.4.25f1",
-      "version": "2.0.22",
-      "source": "registry"
+      "version": "2.0.23",
+      "source": "registry",
+      "testable": false
     },
     "com.unity.ide.vscode@1.2.5": {
       "name": "com.unity.ide.vscode",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ide.vscode",
+      "displayName": "Visual Studio Code Editor",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ide.vscode@82e68656b7bd",
       "fingerprint": "82e68656b7bdc5da8beb1fbaf1bb4ecf13456d51",
       "editorCompatibility": "2019.2.0a12",
       "version": "1.2.5",
-      "source": "registry"
+      "source": "registry",
+      "testable": false
     },
     "com.unity.multiplayer.center@1.0.0": {
       "name": "com.unity.multiplayer.center",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.multiplayer.center",
-      "fingerprint": "b27203cbee4b0eb1910981fa8a1f299c8134b318",
+      "displayName": "Multiplayer Center",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.multiplayer.center@f3fb577b3546",
+      "fingerprint": "f3fb577b3546594b97b8cc34307cd621f60f1c73",
       "editorCompatibility": "6000.0.0a1",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
-    "com.unity.scriptablebuildpipeline@2.1.5": {
+    "com.unity.scriptablebuildpipeline@2.4.1": {
       "name": "com.unity.scriptablebuildpipeline",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.scriptablebuildpipeline",
-      "fingerprint": "8cf66f134cb3f8a955d489173bfd88b3df4f8bf0",
-      "editorCompatibility": "2019.4.0a1",
-      "version": "2.1.5",
-      "source": "registry"
+      "displayName": "Scriptable Build Pipeline",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.scriptablebuildpipeline@4fce4ca980cb",
+      "fingerprint": "4fce4ca980cb03fce1567f8f211823260fca739a",
+      "editorCompatibility": "2023.1.0a1",
+      "version": "2.4.1",
+      "source": "registry",
+      "testable": false
     },
-    "com.unity.test-framework@1.4.5": {
+    "com.unity.test-framework@1.6.0": {
       "name": "com.unity.test-framework",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.test-framework",
-      "fingerprint": "0a21eb82d95cd331643a1e0ce4e8e9a5f18954c8",
-      "editorCompatibility": "2019.4.0a10",
-      "version": "1.4.5",
-      "source": "registry"
+      "displayName": "Test Framework",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.test-framework@40b8da2bd3e9",
+      "fingerprint": "40b8da2bd3e983adc3b78d9740a2a48ddb8f179f",
+      "editorCompatibility": "6000.0.44f1",
+      "version": "1.6.0",
+      "source": "builtin",
+      "testable": false
     },
-    "com.unity.timeline@1.8.7": {
+    "com.unity.timeline@1.8.9": {
       "name": "com.unity.timeline",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.timeline",
-      "fingerprint": "c58b4ee65782ad38338e29f7ee67787cb6998f04",
-      "editorCompatibility": "2019.3.0a1",
-      "version": "1.8.7",
-      "source": "registry"
+      "displayName": "Timeline",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.timeline@6b9e48457ddb",
+      "fingerprint": "6b9e48457ddb4f64813d77fd77efc79a8f3102ae",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.8.9",
+      "source": "registry",
+      "testable": false
     },
     "com.unity.ugui@2.0.0": {
       "name": "com.unity.ugui",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ugui",
-      "fingerprint": "0187e0e77e6c4674362938fa5a77e1c92574f3dd",
+      "displayName": "Unity UI",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ugui@e375ff18e90f",
+      "fingerprint": "e375ff18e90f823f9c3d4ffbc1532d6cde85ed48",
       "editorCompatibility": "2019.2.0a1",
       "version": "2.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
-    "com.unity.visualscripting@1.9.4": {
+    "com.unity.visualscripting@1.9.7": {
       "name": "com.unity.visualscripting",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.visualscripting",
-      "fingerprint": "0920df93f9574f857a55af27bd38fdd9230a3f51",
+      "displayName": "Visual Scripting",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.visualscripting@6279e2b7c485",
+      "fingerprint": "6279e2b7c4858e56cca7f367cd38c49ef66778c9",
       "editorCompatibility": "2021.3.0a1",
-      "version": "1.9.4",
-      "source": "registry"
+      "version": "1.9.7",
+      "source": "registry",
+      "testable": false
     },
     "com.unity.modules.accessibility@1.0.0": {
       "name": "com.unity.modules.accessibility",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.accessibility",
+      "displayName": "Accessibility",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.accessibility",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.ai@1.0.0": {
       "name": "com.unity.modules.ai",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.ai",
+      "displayName": "AI",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.ai",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.androidjni@1.0.0": {
       "name": "com.unity.modules.androidjni",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.androidjni",
+      "displayName": "Android JNI",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.androidjni",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.animation@1.0.0": {
       "name": "com.unity.modules.animation",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.animation",
+      "displayName": "Animation",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.animation",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.assetbundle@1.0.0": {
       "name": "com.unity.modules.assetbundle",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.assetbundle",
+      "displayName": "Asset Bundle",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.assetbundle",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.audio@1.0.0": {
       "name": "com.unity.modules.audio",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.audio",
+      "displayName": "Audio",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.audio",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.cloth@1.0.0": {
       "name": "com.unity.modules.cloth",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.cloth",
+      "displayName": "Cloth",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.cloth",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.director@1.0.0": {
       "name": "com.unity.modules.director",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.director",
+      "displayName": "Director",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.director",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.imageconversion@1.0.0": {
       "name": "com.unity.modules.imageconversion",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.imageconversion",
+      "displayName": "Image Conversion",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.imageconversion",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.imgui@1.0.0": {
       "name": "com.unity.modules.imgui",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.imgui",
+      "displayName": "IMGUI",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.imgui",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.jsonserialize@1.0.0": {
       "name": "com.unity.modules.jsonserialize",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.jsonserialize",
+      "displayName": "JSONSerialize",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.jsonserialize",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.particlesystem@1.0.0": {
       "name": "com.unity.modules.particlesystem",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.particlesystem",
+      "displayName": "Particle System",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.particlesystem",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.physics@1.0.0": {
       "name": "com.unity.modules.physics",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.physics",
+      "displayName": "Physics",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.physics",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.physics2d@1.0.0": {
       "name": "com.unity.modules.physics2d",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.physics2d",
+      "displayName": "Physics 2D",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.physics2d",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.screencapture@1.0.0": {
       "name": "com.unity.modules.screencapture",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.screencapture",
+      "displayName": "Screen Capture",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.screencapture",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.terrain@1.0.0": {
       "name": "com.unity.modules.terrain",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.terrain",
+      "displayName": "Terrain",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.terrain",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.terrainphysics@1.0.0": {
       "name": "com.unity.modules.terrainphysics",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.terrainphysics",
+      "displayName": "Terrain Physics",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.terrainphysics",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.tilemap@1.0.0": {
       "name": "com.unity.modules.tilemap",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.tilemap",
+      "displayName": "Tilemap",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.tilemap",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.ui@1.0.0": {
       "name": "com.unity.modules.ui",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.ui",
+      "displayName": "UI",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.ui",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.uielements@1.0.0": {
       "name": "com.unity.modules.uielements",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.uielements",
+      "displayName": "UIElements",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.uielements",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.umbra@1.0.0": {
       "name": "com.unity.modules.umbra",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.umbra",
+      "displayName": "Umbra",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.umbra",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.unityanalytics@1.0.0": {
       "name": "com.unity.modules.unityanalytics",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.unityanalytics",
+      "displayName": "Unity Analytics",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unityanalytics",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.unitywebrequest@1.0.0": {
       "name": "com.unity.modules.unitywebrequest",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.unitywebrequest",
+      "displayName": "Unity Web Request",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequest",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.unitywebrequestassetbundle@1.0.0": {
       "name": "com.unity.modules.unitywebrequestassetbundle",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.unitywebrequestassetbundle",
+      "displayName": "Unity Web Request Asset Bundle",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestassetbundle",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.unitywebrequestaudio@1.0.0": {
       "name": "com.unity.modules.unitywebrequestaudio",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.unitywebrequestaudio",
+      "displayName": "Unity Web Request Audio",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestaudio",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.unitywebrequesttexture@1.0.0": {
       "name": "com.unity.modules.unitywebrequesttexture",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.unitywebrequesttexture",
+      "displayName": "Unity Web Request Texture",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequesttexture",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.unitywebrequestwww@1.0.0": {
       "name": "com.unity.modules.unitywebrequestwww",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.unitywebrequestwww",
+      "displayName": "Unity Web Request WWW",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.unitywebrequestwww",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.vehicles@1.0.0": {
       "name": "com.unity.modules.vehicles",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.vehicles",
+      "displayName": "Vehicles",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.vehicles",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.video@1.0.0": {
       "name": "com.unity.modules.video",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.video",
+      "displayName": "Video",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.video",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.vr@1.0.0": {
       "name": "com.unity.modules.vr",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.vr",
+      "displayName": "VR",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.vr",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.wind@1.0.0": {
       "name": "com.unity.modules.wind",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.wind",
+      "displayName": "Wind",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.wind",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.xr@1.0.0": {
       "name": "com.unity.modules.xr",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.xr",
+      "displayName": "XR",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.xr",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.subsystems@1.0.0": {
       "name": "com.unity.modules.subsystems",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.subsystems",
+      "displayName": "Subsystems",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.subsystems",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.modules.hierarchycore@1.0.0": {
       "name": "com.unity.modules.hierarchycore",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.modules.hierarchycore",
+      "displayName": "Hierarchy Core",
+      "resolvedPath": "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.6f2\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\com.unity.modules.hierarchycore",
       "version": "1.0.0",
-      "source": "builtin"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.ext.nunit@2.0.5": {
       "name": "com.unity.ext.nunit",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ext.nunit",
-      "fingerprint": "60ef35ffd3cd5e2f5c8887a4a4ca6148854cd092",
+      "displayName": "Custom NUnit",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.ext.nunit@031a54704bff",
+      "fingerprint": "031a54704bffe39e6a0324909f8eaa4565bdebf2",
       "editorCompatibility": "2019.4.0a1",
       "version": "2.0.5",
-      "source": "registry"
+      "source": "builtin",
+      "testable": false
     },
     "com.unity.editorcoroutines@1.0.0": {
       "name": "com.unity.editorcoroutines",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.editorcoroutines",
+      "displayName": "Editor Coroutines",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.editorcoroutines@7d48783e7b8c",
       "fingerprint": "7d48783e7b8cfcee5f8ef9ba787ed0d9dad4ebca",
       "editorCompatibility": "2018.1.0a1",
       "version": "1.0.0",
-      "source": "registry"
+      "source": "registry",
+      "testable": false
     },
-    "com.unity.performance.profile-analyzer@1.2.2": {
+    "com.unity.performance.profile-analyzer@1.2.3": {
       "name": "com.unity.performance.profile-analyzer",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.performance.profile-analyzer",
-      "fingerprint": "fe7acfd2717a98ded6ddc33be6b2ebe4459a2add",
+      "displayName": "Profile Analyzer",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.performance.profile-analyzer@a68e7bc84997",
+      "fingerprint": "a68e7bc849973d943853204178d08a2bc7656ffe",
       "editorCompatibility": "2020.3.0a1",
-      "version": "1.2.2",
-      "source": "registry"
+      "version": "1.2.3",
+      "source": "registry",
+      "testable": false
     },
     "com.unity.testtools.codecoverage@1.2.6": {
       "name": "com.unity.testtools.codecoverage",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.testtools.codecoverage",
+      "displayName": "Code Coverage",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.testtools.codecoverage@205a02cbcb39",
       "fingerprint": "205a02cbcb39584f20b51c49b853047aceb3a3a7",
       "editorCompatibility": "2019.3.0a1",
       "version": "1.2.6",
-      "source": "registry"
+      "source": "registry",
+      "testable": false
     },
-    "com.unity.settings-manager@2.0.1": {
+    "com.unity.settings-manager@2.1.0": {
       "name": "com.unity.settings-manager",
-      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.settings-manager",
-      "fingerprint": "56a930affa1e4462d3595b5c19a1c2a4bf2015d2",
-      "editorCompatibility": "2018.4.0a1",
-      "version": "2.0.1",
-      "source": "registry"
+      "displayName": "Settings Manager",
+      "resolvedPath": "C:\\Users\\nwond\\OneDrive\\바탕 화면\\Photon-Server\\Photon Server\\Library\\PackageCache\\com.unity.settings-manager@41738c275190",
+      "fingerprint": "41738c27519039c335849eb78949382f4d7a3544",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "2.1.0",
+      "source": "registry",
+      "testable": false
     }
   }
 }

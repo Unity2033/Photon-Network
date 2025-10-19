@@ -2,7 +2,6 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
 
-
 public class GameManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] double time;
@@ -15,6 +14,11 @@ public class GameManager : MonoBehaviourPunCallbacks
     public void Awake()
     {
         initializeTime = PhotonNetwork.Time;
+
+        if (PhotonNetwork.IsMasterClient)
+        {
+            photonView.RPC("InitializeTime", RpcTarget.AllBuffered, PhotonNetwork.Time);
+        }
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
@@ -23,6 +27,12 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.CurrentRoom.IsOpen = false;
         }
+    }
+
+    [PunRPC]
+    void InitializeTime(double time)
+    {
+        initializeTime = time;
     }
 
     private void Update()

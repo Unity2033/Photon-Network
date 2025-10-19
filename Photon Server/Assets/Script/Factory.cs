@@ -11,3 +11,4 @@ public class Factory : MonoBehaviour
         return clone.GetComponent<T>();
     }
 }
+
