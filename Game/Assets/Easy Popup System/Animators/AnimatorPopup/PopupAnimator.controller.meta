@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 43eed25ad7a8946b386f3104c1e9deb6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325685
+  packageName: Easy Popup System
+  packageVersion: 1.0
+  assetPath: Assets/DevePolers/Easy Popup System/Animators/AnimatorPopup/PopupAnimator.controller
+  uploadId: 776433

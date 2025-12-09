@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: faf6eac2e150442d4a0904ddd2d5a7b6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325685
+  packageName: Easy Popup System
+  packageVersion: 1.0
+  assetPath: Assets/DevePolers/Easy Popup System/Animators/AnimatorFade/PopupFadeShow.anim
+  uploadId: 776433

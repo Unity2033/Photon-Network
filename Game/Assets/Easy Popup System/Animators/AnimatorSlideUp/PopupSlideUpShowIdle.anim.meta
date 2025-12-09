@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1f0ab20bc78dd41be94df98202a9d4ee
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325685
+  packageName: Easy Popup System
+  packageVersion: 1.0
+  assetPath: Assets/DevePolers/Easy Popup System/Animators/AnimatorSlideUp/PopupSlideUpShowIdle.anim
+  uploadId: 776433

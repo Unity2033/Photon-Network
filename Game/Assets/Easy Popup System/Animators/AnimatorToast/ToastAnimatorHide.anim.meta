@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cd5ec485f35f14a7ea5a5a3c8368d586
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325685
+  packageName: Easy Popup System
+  packageVersion: 1.0
+  assetPath: Assets/DevePolers/Easy Popup System/Animators/AnimatorToast/ToastAnimatorHide.anim
+  uploadId: 776433

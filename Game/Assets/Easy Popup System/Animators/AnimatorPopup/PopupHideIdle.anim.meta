@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e6c4840c2008a4ba5af1dfba71e339dc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325685
+  packageName: Easy Popup System
+  packageVersion: 1.0
+  assetPath: Assets/DevePolers/Easy Popup System/Animators/AnimatorPopup/PopupHideIdle.anim
+  uploadId: 776433

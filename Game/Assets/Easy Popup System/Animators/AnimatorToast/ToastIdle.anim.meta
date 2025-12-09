@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 52b03bbf1047a4b16a33e7b9b48c63c2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325685
+  packageName: Easy Popup System
+  packageVersion: 1.0
+  assetPath: Assets/DevePolers/Easy Popup System/Animators/AnimatorToast/ToastIdle.anim
+  uploadId: 776433

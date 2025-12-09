@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c081e2f0ce2524b9698250675ba2c2f4
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 325685
+  packageName: Easy Popup System
+  packageVersion: 1.0
+  assetPath: Assets/DevePolers/Easy Popup System/Resources/ToastWarning.prefab
+  uploadId: 776433
