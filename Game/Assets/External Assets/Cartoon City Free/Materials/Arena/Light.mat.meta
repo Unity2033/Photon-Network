@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 05aa2ef4b0fee4347b7e65e7086aaf7a
+timeCreated: 1529845357
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121755
+  packageName: Arcady FPS Multiplayer shooter
+  packageVersion: 1.0
+  assetPath: Assets/Force/Materials/Arena/Light.mat
+  uploadId: 253103

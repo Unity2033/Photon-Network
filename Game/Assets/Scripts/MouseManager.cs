@@ -1,28 +1,44 @@
-using Photon.Pun;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MouseManager : MonoBehaviourPunCallbacks
+public class MouseManager : MonoBehaviour
 {
-    [SerializeField] static MouseManager instance;
+    private static MouseManager instance;
 
-    public static MouseManager Instance { get { return instance; } }
-
-    private void Awake()
+    public static MouseManager Instance
     {
-        if(instance == null)
+        get
         {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
+            if (instance == null)
+            {
+                instance = FindAnyObjectByType<MouseManager>();
+
+                if (instance == null)
+                {
+                    GameObject clone = new GameObject(typeof(MouseManager).Name);
+
+                    instance = clone.AddComponent<MouseManager>();
+                }
+            }
+
+            return instance;
         }
     }
 
-    private void Start()
+    private void Awake()
     {
-        SetMouse(false);
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     public void SetMouse(bool state)
@@ -32,8 +48,19 @@ public class MouseManager : MonoBehaviourPunCallbacks
         Cursor.lockState = (CursorLockMode)Convert.ToInt32(!state);
     }
 
-    private void OnDestroy()
+    private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        SetMouse(true);
+        switch (scene.buildIndex)
+        {
+            case 2 : SetMouse(false);
+                break;
+            default : SetMouse(true);
+                break;
+        }
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

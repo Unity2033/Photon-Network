@@ -1,31 +1,31 @@
-using Photon.Pun;
-using Photon.Realtime;
-using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using System.Collections.Generic;
+using Photon.Realtime;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] Transform parentTransform;
 
-    [SerializeField] Dictionary<string, GameObject> dictionary = new();
+    [SerializeField] Dictionary<string, GameObject> dictionary = new Dictionary<string, GameObject>();
 
-    public override void OnConnectedToMaster()
+    public void GenerateRoom()
     {
-        // JoinLobby() : 특정 로비를 생성하여 진입하는 함수
-        if (PhotonNetwork.InLobby == false)
-        {
-            PhotonNetwork.JoinLobby();
-        }
-    }
-
-    public void GeneratorRoom()
-    {
-        PanelManager.Instance.Load(Panel.Generator, null);
+        PanelManager.Instance.Load(Panel.Generator);
     }
 
     public override void OnJoinedRoom()
     {
         PhotonNetwork.LoadLevel("Game");
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        // JoinLobby : 특정 로비를 생성하여 진입하는 함수
+        if(PhotonNetwork.InLobby == false)
+        {
+            PhotonNetwork.JoinLobby();
+        }
     }
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
@@ -35,7 +35,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         foreach(RoomInfo roomInfo in roomList)
         {
             // 룸이 삭제된 경우
-            if(roomInfo.RemovedFromList == true)
+            if(roomInfo.RemovedFromList)
             {
                 dictionary.TryGetValue(roomInfo.Name, out prefab);
 
@@ -46,24 +46,16 @@ public class LobbyManager : MonoBehaviourPunCallbacks
             else // 룸의 정보가 변경되는 경우
             {
                 // 룸이 처음 생성되는 경우
-                if (dictionary.ContainsKey(roomInfo.Name) == false)
+                if(dictionary.TryGetValue(roomInfo.Name, out prefab) == false)
                 {
-                    GameObject clone = Instantiate(Resources.Load<GameObject>("Room"), parentTransform);
-
-                    clone.GetComponent<RoomView>().UpdateRoomInformation(roomInfo);
-
-                    dictionary.Add(roomInfo.Name, clone);
+                    prefab = Instantiate(Resources.Load<GameObject>("Room"), parentTransform);
+                    
+                    dictionary.Add(roomInfo.Name, prefab);
                 }
-                else
-                {
-                    dictionary.TryGetValue(roomInfo.Name, out prefab);
 
-                    prefab.GetComponent<RoomView>().UpdateRoomInformation(roomInfo);
-                }
+                prefab.GetComponent<RoomData>().UpdateRoomInformation(roomInfo);
             }
-
         }
-
+       
     }
-
 }

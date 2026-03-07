@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public enum Panel
@@ -11,21 +12,35 @@ public enum Panel
 
 public class PanelManager : MonoBehaviour
 {
-    GameObject clone = null; 
+    [SerializeField] GameObject clone = null;
 
-    Dictionary<Panel, GameObject> dictionary = new();
+    private static PanelManager instance;
 
-    static PanelManager instance;
+    private Dictionary<Panel, GameObject> dictionary = new Dictionary<Panel, GameObject>();
 
-    public static PanelManager Instance { get { return instance; } }
+    public static PanelManager Instance 
+    {       
+        get 
+        { 
+            if(instance == null)
+            {
+                instance = FindAnyObjectByType<PanelManager>();
+
+                if(instance == null)
+                {
+                    GameObject clone = new GameObject(typeof(PanelManager).Name);
+
+                    instance = clone.AddComponent<PanelManager>();
+                }
+            }
+            
+            return instance; 
+        }  
+    }
 
     private void Awake()
     {
-        if(instance == null)
-        {
-            instance = this;
-        }
-        else
+        if(instance != null)
         {
             Destroy(gameObject);
         }
@@ -33,7 +48,7 @@ public class PanelManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void Load(Panel panel, string message)
+    public void Load(Panel panel, string message = null)
     {
         if(dictionary.TryGetValue(panel, out clone) == false)
         {
@@ -52,8 +67,7 @@ public class PanelManager : MonoBehaviour
             clone.SetActive(true);
         }
 
-
-        if (clone.GetComponent<ErrorPanel>() == true)
+        if(message != null)
         {
             clone.GetComponent<ErrorPanel>().SetText(message);
         }

@@ -449,8 +449,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6300471006445134374}
-        m_TargetAssemblyTypeName: CreateRoom, Assembly-CSharp
+      - m_Target: {fileID: 4763468602758699405}
+        m_TargetAssemblyTypeName: GeneratorPanel, Assembly-CSharp
         m_MethodName: Select
         m_Mode: 6
         m_Arguments:
@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 4715911115100800578}
   - component: {fileID: 3217221636127412888}
   m_Layer: 0
-  m_Name: StarsContainer
+  m_Name: Room Personnal Option
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1297,10 +1297,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6300471006445134374}
-        m_TargetAssemblyTypeName: CreateRoom, Assembly-CSharp
-        m_MethodName: Cancle
-        m_Mode: 1
+      - m_Target: {fileID: 6093605688534468388}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1480,7 +1480,7 @@ GameObject:
   - component: {fileID: 4934963389072317336}
   - component: {fileID: 6854758633167415004}
   - component: {fileID: 484389841101866218}
-  - component: {fileID: 6300471006445134374}
+  - component: {fileID: 4763468602758699405}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -1653,7 +1653,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6300471006445134374
+--- !u!114 &4763468602758699405
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1662,15 +1662,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6093605688534468388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec8bea2d651f19f4f839fb07e18a7185, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a3d73c1e7f262f4a8383dadc94f2b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleInputField: {fileID: 1617118245345155350}
+  personnal: 0
   toggles:
   - {fileID: 1015928345040006213}
   - {fileID: 2206029650288297574}
   - {fileID: 698881797974147073}
-  personnal: 0
+  inputField: {fileID: 1617118245345155350}
+  createRoomButton: {fileID: 8790238324835791828}
 --- !u!1 &6406813135932593629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,8 +1892,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6300471006445134374}
-        m_TargetAssemblyTypeName: CreateRoom, Assembly-CSharp
+      - m_Target: {fileID: 4763468602758699405}
+        m_TargetAssemblyTypeName: GeneratorPanel, Assembly-CSharp
         m_MethodName: Select
         m_Mode: 6
         m_Arguments:
@@ -1901,7 +1902,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   m_IsOn: 0
 --- !u!1 &6857781282688851532
@@ -1988,8 +1989,8 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6300471006445134374}
-        m_TargetAssemblyTypeName: CreateRoom, Assembly-CSharp
+      - m_Target: {fileID: 4763468602758699405}
+        m_TargetAssemblyTypeName: GeneratorPanel, Assembly-CSharp
         m_MethodName: Select
         m_Mode: 6
         m_Arguments:
@@ -1998,7 +1999,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   m_IsOn: 0
 --- !u!1 &6877175083729503196
@@ -2215,7 +2216,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4763468602758699405}
+        m_TargetAssemblyTypeName: GeneratorPanel, Assembly-CSharp
+        m_MethodName: OnRoomNameChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
@@ -2503,9 +2516,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6300471006445134374}
-        m_TargetAssemblyTypeName: CreateRoom, Assembly-CSharp
-        m_MethodName: OnCreateRoom
+      - m_Target: {fileID: 4763468602758699405}
+        m_TargetAssemblyTypeName: GeneratorPanel, Assembly-CSharp
+        m_MethodName: CreateRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 42ec8a0e710138343a271d732299cfb6
+guid: 4fee88e7ef452b146aa4add22a3da773
 AssetOrigin:
   serializedVersion: 1
   productId: 139404
   packageName: Basic RPG Cursors
   packageVersion: 1.0
-  assetPath: Assets/Cursors/Cursors 64/Cursor_Hand.png
+  assetPath: Assets/Cursors/Cursors 256/G_Cursor_Hand.png
   uploadId: 293296
 TextureImporter:
   internalIDToNameTable: []
@@ -120,7 +120,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a9be68fbc5489dd46affb8b8045ca2a0
+    spriteID: ba1cc55eac5f6bf47b2b023a4f25aad5
     internalID: 0
     vertices: []
     indices: 

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 16145d9c01b4d55408f99ddca69655d4
+timeCreated: 1529444577
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121755
+  packageName: Arcady FPS Multiplayer shooter
+  packageVersion: 1.0
+  assetPath: Assets/Force/Materials/Arena/Skybox.mat
+  uploadId: 253103

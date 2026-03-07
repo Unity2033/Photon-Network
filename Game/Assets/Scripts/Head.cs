@@ -5,15 +5,15 @@ public class Head : MonoBehaviourPunCallbacks
 {
     [SerializeField] Rotation rotation;
 
-    [SerializeField] float minimumAngle = -65;
-    [SerializeField] float maximumAngle = 65;
+    [SerializeField] float minimumAngle = -55;
+    [SerializeField] float maximumAngle = 55;
 
-    private void Awake()
+    public void Awake()
     {
         rotation = GetComponent<Rotation>();
     }
 
-    void Update()
+    private void Update()
     {
         if(photonView.IsMine)
         {

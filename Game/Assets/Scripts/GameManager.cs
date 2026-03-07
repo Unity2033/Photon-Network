@@ -1,22 +1,40 @@
-using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
-    public override void OnPlayerEnteredRoom(Player newPlayer)
+    [SerializeField] double time;
+    [SerializeField] double initializeTime;
+
+    [SerializeField] int minute;
+    [SerializeField] int second;
+    [SerializeField] int milliseconds;
+
+    public void Awake()
     {
-        if(PhotonNetwork.CurrentRoom.PlayerCount >= PhotonNetwork.CurrentRoom.MaxPlayers)
+        initializeTime = PhotonNetwork.Time;
+
+        if (PhotonNetwork.IsMasterClient)
         {
-            PhotonNetwork.CurrentRoom.IsOpen = false;
+            photonView.RPC("InitializeTime", RpcTarget.AllBuffered, PhotonNetwork.Time);
         }
     }
 
-    public override void OnPlayerLeftRoom(Player otherPlayer)
+    [PunRPC]
+    void InitializeTime(double time)
     {
-        if (PhotonNetwork.CurrentRoom.PlayerCount != PhotonNetwork.CurrentRoom.MaxPlayers)
-        {
-            PhotonNetwork.CurrentRoom.IsOpen = true;
-        }
+        initializeTime = time;
+    }
+
+    private void Update()
+    {
+        time = PhotonNetwork.Time - initializeTime;
+
+        minute = (int)time / 60;
+        second = (int)time % 60;
+        milliseconds = (int)(time * 100) % 100;
+
+
     }
 }

@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 1317078295403678783}
   - component: {fileID: 32973525171174394}
   - component: {fileID: 4404740819763098591}
-  - component: {fileID: 8072936518408608854}
+  - component: {fileID: 3108578743532999386}
   m_Layer: 0
   m_Name: Error
   m_TagString: Untagged
@@ -709,7 +709,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8072936518408608854
+--- !u!114 &3108578743532999386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -718,10 +718,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2718235791114193008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c092888d0c532f469fb6339023a332c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ffbb83f48064b946b94853710ac724c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errorText: {fileID: 8485782123682942647}
+  errorText: {fileID: 0}
 --- !u!1 &7488744590270995862
 GameObject:
   m_ObjectHideFlags: 0

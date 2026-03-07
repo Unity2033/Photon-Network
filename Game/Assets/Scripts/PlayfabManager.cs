@@ -1,13 +1,16 @@
-using UnityEngine;
 using Photon.Pun;
 using PlayFab;
-using UnityEngine.UI;
-using Photon.Realtime;
 using PlayFab.ClientModels;
 using System.Collections;
+using System.Text.RegularExpressions;
+using UnityEditor.PackageManager;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayfabManager : MonoBehaviourPunCallbacks
 {
+    [SerializeField] string version;
+
     [SerializeField] InputField addressInputField;
     [SerializeField] InputField passwordInputField;
 
@@ -17,9 +20,9 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
 
         PhotonNetwork.AutomaticallySyncScene = false;
 
-        PhotonNetwork.GameVersion = "1.0f";
+        PhotonNetwork.GameVersion = version;
 
-        StartCoroutine(Connect());
+        StartCoroutine(ConnectRoutine());
     }
 
     public void Success(GetAccountInfoResult getAccountInfoResult)
@@ -32,12 +35,12 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LoadLevel("Lobby");
     }
 
-    private IEnumerator Connect()
+    private IEnumerator ConnectRoutine()
     {
         // Name Server에서 Master Server로 넘어가는 중...
-        PhotonNetwork.ConnectUsingSettings(); 
+        PhotonNetwork.ConnectUsingSettings();
 
-        // 서버 연결이 완료되거나 시간 초과될 때까지 대기
+        // 서버 연결이 완료되거나 시간 초과가 될 때까지 대기합니다.
         while(PhotonNetwork.IsConnectedAndReady == false)
         {
             yield return null;
@@ -65,21 +68,13 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
 
     public void Subscribe()
     {
-        PanelManager.Instance.Load(Panel.Subscribe, null);
+        PanelManager.Instance.Load(Panel.Subscribe);
     }
 
     public void Failure(PlayFabError playFabError)
     {
-        var report = playFabError.GenerateErrorReport();
+        Debug.Log(playFabError.GenerateErrorReport());
 
-        var lines = report.Split("\n");
-
-        switch (lines.Length)
-        {
-            case 4 : PanelManager.Instance.Load(Panel.Error, $"{lines[2]} \n\n {lines[3]}");
-                break;
-            case 5 : PanelManager.Instance.Load(Panel.Error, $"{lines[2]} \n\n {lines[3]} \n\n {lines[4]}");
-                break;
-        } 
+        PanelManager.Instance.Load(Panel.Error, playFabError.GenerateErrorReport());
     }
 }

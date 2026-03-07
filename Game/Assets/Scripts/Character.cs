@@ -1,20 +1,17 @@
 using UnityEngine;
 using Photon.Pun;
-using UnityEngine.InputSystem;
 
-public class Character : MonoBehaviourPun 
+public class Character : MonoBehaviourPun
 {
-    [SerializeField] Rotation rotation;
-    [SerializeField] Camera remoteCamera;
-    [SerializeField] CharacterController characterController;
-
     [SerializeField] float speed;
     [SerializeField] Vector3 direction;
+    [SerializeField] Rotation rotation;
+    [SerializeField] Rigidbody rigidbody;
 
     private void Awake()
     {
         rotation = GetComponent<Rotation>();
-        characterController = GetComponent<CharacterController>();
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     void Start()
@@ -22,22 +19,33 @@ public class Character : MonoBehaviourPun
         DisableCamera();
     }
 
-    private void Update()
+    void Update()
     {
         if(photonView.IsMine)
         {
-            if(Input.GetKeyDown(KeyCode.Escape))
-            {
-                MouseManager.Instance.SetMouse(true);
-
-                PanelManager.Instance.Load(Panel.Pause, null);
-            }
+            Pause();
 
             Control();
+        }    
+    }
 
+    private void FixedUpdate()
+    {
+        if (photonView.IsMine)
+        {
             Move();
 
-            rotation.RotateY();
+            rotation.RotateY(rigidbody);
+        }
+    }
+
+    void Pause()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            MouseManager.Instance.SetMouse(true);
+
+            PanelManager.Instance.Load(Panel.Pause);
         }
     }
 
@@ -50,7 +58,11 @@ public class Character : MonoBehaviourPun
         }
         else
         {
-            remoteCamera.gameObject.SetActive(false);
+            Camera eye = transform.GetComponentInChildren<Camera>();
+
+            eye.GetComponent<AudioListener>().gameObject.SetActive(false);
+
+            eye.gameObject.SetActive(false);
         }
     }
 
@@ -65,7 +77,25 @@ public class Character : MonoBehaviourPun
 
     public void Move()
     {
-        characterController.Move(characterController.transform.TransformDirection(direction) * speed * Time.deltaTime);
+        rigidbody.MovePosition(rigidbody.position + rigidbody.transform.TransformDirection(direction) * speed * Time.deltaTime);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Consumable") == false)
+        {
+            return;
+        }
+
+        PhotonView view = other.GetComponent<PhotonView>();
+        
+        if(view.IsMine)
+        {
+            PhotonNetwork.Destroy(view.gameObject);
+        }
+        else if(PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.Destroy(view.gameObject);
+        }
+    }
 }

@@ -1,7 +1,7 @@
 using Photon.Pun;
-using UnityEngine;
 using Photon.Realtime;
 using System.Collections;
+using UnityEngine;
 
 public class MasterManager : MonoBehaviourPunCallbacks
 {
@@ -11,11 +11,11 @@ public class MasterManager : MonoBehaviourPunCallbacks
     {
         if(PhotonNetwork.IsMasterClient)
         {
-            while(true)
+            while (true)
             {
                 if (PhotonNetwork.CurrentRoom != null)
                 {
-                    PhotonNetwork.InstantiateRoomObject("Ball", Vector3.zero, Quaternion.identity);
+                    PhotonNetwork.InstantiateRoomObject("Potion", Vector3.zero, Quaternion.identity);
                 }
 
                 yield return waitForSeconds;
@@ -27,6 +27,4 @@ public class MasterManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.SetMasterClient(PhotonNetwork.PlayerList[0]);
     }
-
-
 }
